@@ -1,0 +1,9 @@
+1. Find sql dump Error: 
+mysql -h "localhost" -u "root" "-pnopass" "cms" < "cde.sql"
+
+2. Sql dump with structure and data:
+mysqldump -hlocalhost -uroot -pnopass --routine --events vpn_cms > /tmp/cms_db.sql
+
+
+3. Sql dump structure only:
+mysqldump -hlocalhost -uroot -pnopass --routine --events --no-data vpn_cms > /tmp/cms_db.sql

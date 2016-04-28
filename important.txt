@@ -1,0 +1,12 @@
+ipcq information:
+ipcs -q
+ipcrm -q
+
+Link create:
+ln -s /ismp/production/smsgw_release/ServiceCreationPanel/blsdp_portal_newlook_shubhajit /var/www/html/updated_panel_shubhajit
+
+Tar create:
+tar -zcvf vpn.tar.gz vpn
+
+Copy:
+cp -R umg /ismp/test/

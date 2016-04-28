@@ -1,0 +1,7 @@
+1. Perform multiple operations(update/delete/select) with subquery at a time:
+
+UPDATE smsoutbox SET InstanceID = 28 WHERE msgID IN (
+SELECT * FROM (
+SELECT msgID FROM smsoutbox WHERE SCHEDULE < NOW() AND ServiceID = 'KringKring_old' AND srcMN = '2580' AND msgStatus ='QUE' LIMIT 25
+) AS so
+) 

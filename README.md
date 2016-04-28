@@ -1,2 +1,2 @@
 # MySql
-mysql query
+mysql query/syntex
